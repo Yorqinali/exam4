@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <header>
+          <div class="logos">
+            <img class="logo" src="./images/Pizza-logo.svg" alt="img" />
+            <div class="logo-text">
+              <h2>PIZZABEK</h2>
+              <p class="logo-p">eng mazali pitsalar faqatgina bizda)</p>
+            </div>
+          </div>
+          <div class="inputs">
+            <input type="text" id="input" placeholder="Pitsalarni qidirish" />
+            <div class="search-icon"><i class="ri-search-line"></i></div>
+          </div>
+          <button class="header-btn" id="header-btn">
+            <a class="header-btn-a" href="./index2.html">
+              0 UZS
+            <hr class="header-btn-hr" />
+            <img
+              style="margin-right: 8px"
+              class="arava"
+              src="./images/svg.svg"
+              alt="icon"
+            />
+            0
+            </a>
+          </button>
+        </header>
+        <main>
+          <ul>
+            <li id="barchasi">Barchasi</li>
+            <li id="goshtli">Go'shtli</li>
+            <li id="pishloqli">Pishloqli</li>
+            <li id="qoziqorinli">Qo'ziqorinli</li>
+            <li id="achchiq">Achchiq</li>
+          </ul>
+          <h1 id="pitsa-turi">Barcha pitsalar</h1>
+          <div class="cards">
+            <!-- <div class="card" id="cardlar">
+              <img class="card-img" src="./images/image.png" alt="img" />
+              <h4>Donar</h4>
+              <p class="card-p">
+                Donar go‘shti va haqiqiy motsarella pishlog‘i solingan mazali va
+                to‘yimli pitsa
+              </p>
+              <div class="price">
+                <p><span class="price-p">60,000</span> UZS</p>
+              </div>
+            </div> -->
+          </div>
+        </main> 
+      </div>
+    </div>
+      <div class="modal" id="modal">
+        <div class="modal-card">
+          <div class="modal-card-img">
+            <i id="modal-close" class="ri-arrow-left-line"></i>
+            <img class="modal-img" src="./images/image.png" alt="PIZZABEK" />
+          </div>
+          <div class="modal-card-text">
+            <h2 class="modal-h2">Salsa</h2>
+            <p class="modal-p">
+              Joʻja, salsa sousi, mayin motsarella pishlogʻi, xalapenyo, bulgʻor
+              qalampiri va pomidorlar
+            </p>
+            <h4 class="modal-h4">Pitsa kattaligi</h4>
+            <div class="modal-pitsa-number">
+              <button class="modal-minus-pilus" id="minus-btn">
+                <i class="ri-indeterminate-circle-line"></i>
+              </button>
+              <p class="modal-value">1 - ta</p>
+              <button class="modal-minus-pilus" id="pilus-btn">
+                <i class="ri-add-circle-line"></i>
+              </button>
+            </div>
+            <div class="olcham">
+              <button  class="razmer1">Ingichka</button>
+              <button class="razmer2">Qalin</button>
+            </div>
+            <div style="display: flex; gap: 32px; align-items: center">
+              <p class="modal-price">55,000 so'm</p>
+              <button class="modal-btn">Savatga qo'shish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
